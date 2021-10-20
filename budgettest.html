@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>HandSubs Budget Calculator</title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="register.php">Register</a></li>
+    <li><a href="Login.php">Login</a></li>
+    <li><a href="budgettest.html">Budget Calculator</a></li>
+  </ul>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto calculate-form">
+        <div class="card card-body text-center mt-5">
+          <h1 class="heading display-5 pb-3">HandSubs Budget Calculator</h1>
+                </div>
+
+<label for="m-cwb"><h4>Netflix</h4></label>
+<input type="number" id="m-cwb" class="form-control" name="m-cwb" placeholder="Netflix Cost">
+<label for="h-cwb"><h4>Spotify</h4></label>
+<input type="number" id="h-cwb" class="form-control" name="h-cwb" placeholder="Spotify Cost">
+<label for="f-cwb"><h4>Amazon Prime</h4></label>
+<input type="number" id="f-cwb" class="form-control" name="f-cwb" placeholder="Amazon Prime Cost">
+<label for="m-cwb"><h4>Apple Music</h4></label>
+<input type="number" id="a-cwb" class="form-control" name="a-cwb" placeholder="Apple Music Cost">
+<label for="m-cwb"><h4>Loot Crate</h4></label>
+<input type="number" id="l-cwb" class="form-control" name="l-cwb" placeholder="Loot Crate Cost">
+<label for="m-cwb"><h4>Other</h4></label>
+<input type="number" id="o-cwb" class="form-control" name="o-cwb" placeholder="Other Cost">
+<label for="m-cwb"><h4>Other</h4></label>
+<input type="number" id="c-cwb" class="form-control" name="c-cwb" placeholder="Other Cost">
+<label for="t-cwb"><h4>Total Cost</h4></label>
+<input type="number" id="t-cwb" class="form-control" name="t-cwb" placeholder="Total Cost" readonly>
+<div class="py-5 text-center">
+<input type="button" id="total" class="button" value="Calculate Total" onclick="javascript:addNumbers()">
+</body>
+<script language="javascript">
+function addNumbers()
+{
+
+var val1 = parseInt(document.getElementById("m-cwb").value);
+var val2 = parseInt(document.getElementById("h-cwb").value);
+var val3 = parseInt(document.getElementById("f-cwb").value);
+var val4 = parseInt(document.getElementById("a-cwb").value);
+var val5 = parseInt(document.getElementById("l-cwb").value);
+var val6 = parseInt(document.getElementById("o-cwb").value);
+var val7 = parseInt(document.getElementById("c-cwb").value);
+var total = document.getElementById("t-cwb");
+total.value = val1 + val2 + val3 + val4 + val5 + val6 + val7;
+}
+</script>
+
+</html>

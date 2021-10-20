@@ -1,0 +1,60 @@
+body {
+  background-image: url('img/Picture3.PNG');
+  /* Full height */
+  /*height: 100%;*/
+  
+  /* Center and scale the image nicely */
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 100vh;
+  position: relative;
+}
+.calculate-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.button {
+    border-radius: 4px;
+    background-color: #0591F0; /* change this to change the colour of button */
+    border: none;
+    color: #f3f3f3; /* change this to change text colour */
+    text-align: center;
+    font-size: 30px; /* change this to change the font size */
+    padding: 10px;
+    width: 400px; /* change this to change the width of the button */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    ul.nav {
+      margin:0;
+      padding:0;
+      list-style:none;
+      height:36px; line-height:36px;
+      background:#0591F0; /* you can change the backgorund color here. */
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:13px;
+  }
+  ul.nav li {
+      border-right:1px solid #0591F0; /* you can change the border color matching to your background color */
+      float:left;
+  }
+  ul.nav a {
+      display:block;
+      padding:0 28px;
+      color:#ccece6;
+      text-decoration:none;
+  }
+  ul.nav a:hover,
+  ul.nav li.current a {
+      background:#0591F0;
+  }
+  body, html {
+    height: 100%;
+  }
+  
